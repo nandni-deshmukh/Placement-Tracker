@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Placement Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Placement Tracker</h1>
+  
+  <div class="container">
+    <!-- Student Form -->
+    <div class="card">
+      <h3>Add Student</h3>
+      <input type="text" id="sname" placeholder="Student Name">
+      <input type="text" id="roll" placeholder="Roll Number">
+      <input type="number" id="cgpa" placeholder="CGPA">
+      <input type="text" id="skills" placeholder="Skills (comma separated)">
+      <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Company Form -->
+    <div class="card">
+      <h3>Add Company</h3>
+      <input type="text" id="cname" placeholder="Company Name">
+      <input type="number" id="ccgpa" placeholder="Min CGPA">
+      <input type="text" id="cskills" placeholder="Required Skills (comma separated)">
+      <button onclick="addCompany()">Add Company</button>
+    </div>
+  </div>
+
+  <!-- Dashboard -->
+  <h2>Student Dashboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>CGPA</th>
+        <th>Skills</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody id="studentTable"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
